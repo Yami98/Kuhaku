@@ -61,10 +61,6 @@ module.exports = {
         user_id: dataOsuUser.id,
         limit: 1,
       });
-      console.log(dataOsu[0].statistics)
-      const scoreid = await v2.scores.details({
-        id: dataOsu[0].id,
-      });
 
       function modsToNumber(mods) {
         let result = 0;
